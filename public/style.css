@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light dark;
+  --bg: #14161a;
+  --panel: #1e2127;
+  --text: #e8e8ec;
+  --muted: #9aa0ab;
+  --folder: #6c8ee0;
+  --file: #7fd0a0;
+  --link: #3a3f4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--link);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+main {
+  flex: 1;
+  min-height: 0;
+}
+
+#graph {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.node-label {
+  fill: var(--text);
+  font-size: 11px;
+  pointer-events: none;
+}
+
+.link {
+  stroke: var(--link);
+  stroke-width: 1.5px;
+}

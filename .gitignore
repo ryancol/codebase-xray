@@ -1,0 +1,7 @@
+node_modules/
+
+# The fixture repo is itself a Git repository (used so the app has real
+# commit history to explore). Nesting it here would create an "embedded
+# repository" that a clone of this repo can't actually pull in, so instead
+# we keep it local-only and regenerate it with scripts/create-fixture.sh.
+fixtures/sample-repo/

@@ -1,0 +1,13 @@
+{
+  "name": "codebase-xray",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local browser tool for visually exploring a Git repository.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
